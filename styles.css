@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Quattrocento Sans";
+}
+body {
+    overflow-x: hidden;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    transition: 0.2s color;
+}
+
+a:hover {
+    color: red;
+}
+
+.title {
+    font-weight: lighter;
+    padding: 0 1.25vw;
+    text-transform: uppercase;
+    letter-spacing: 0.25vw;
+    font-size: 1.75vw;
+}
+.titleBlock {
+    position: absolute;
+    top: 5%;
+    left: 1%;
+    display: flex;
+}
+.aboutUs,
+.scholarships,
+.FAQS {
+    font-family: Varela;
+    font-weight: lighter;
+    font-size: 1vw;
+    margin-left: 15vw;
+}
+.spanLinks {
+    position: absolute;
+    left: 25%;
+    margin-top: 0.85%;
+}
+
+/* ------ USER ICON -----*/
+.fa-user {
+    position: absolute;
+    background-color: black;
+    color: white;
+    right: -15%;
+    margin-top: -1%;
+    border: 2px solid black;
+    border-radius: 100%;
+    width: 2.5vw;
+    height: 2.5vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transition: 0.2s color;
+}
+.fa-user:hover {
+    cursor: pointer;
+    color: #e6e6e6;
+}
+
+/* -------- DROPDOWN MENU -------- */
+.dropdown {
+    position: absolute;
+    margin-top: 0.5vw;
+    margin-left: -5vw;
+    text-align: left;
+    display: none;
+    color: black;
+    font-size: 1.25vw;
+}
+li {
+    list-style-type: none;
+    padding: 1vw 1.5vw;
+    border: 1px solid black;
+}
+li:hover {
+    background-color: #e6e6e6;
+}
+.signOut {
+    font: bold;
+    color: red;
+}
+.fa:hover .dropdown {
+    display: block;
+}
+
+/* ----- HEADER AND MAIN PAGE ------ */
+.mainPage {
+    position: absolute;
+    top: 15%;
+    left: 3%;
+}
+#header {
+    font-size: 6vw;
+    position: absolute;
+    top: 2vw;
+    white-space: nowrap;
+}
+#header-subtext {
+    font-size: 2.5vw;
+    color: rgba(0, 0, 0, 0.75);
+}
