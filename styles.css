@@ -3,6 +3,7 @@
     padding: 0;
     font-family: "Quattrocento Sans";
 }
+
 body {
     overflow-x: hidden;
 }
@@ -14,7 +15,7 @@ a {
 }
 
 a:hover {
-    color: red;
+    color: #3acfd5;
 }
 
 .title {
@@ -22,44 +23,45 @@ a:hover {
     padding: 0 1.25vw;
     text-transform: uppercase;
     letter-spacing: 0.25vw;
+    vertical-align: middle;
     font-size: 1.75vw;
 }
+
 .titleBlock {
     position: absolute;
-    top: 5%;
+    top: 4%;
     left: 1%;
     display: flex;
+    width: 100%;
 }
+
 .aboutUs,
 .scholarships,
 .FAQS {
     font-family: Varela;
     font-weight: lighter;
     font-size: 1vw;
-    margin-left: 15vw;
+    margin-left: 6vw;
 }
+
 .spanLinks {
     position: absolute;
     left: 25%;
-    margin-top: 0.85%;
+    vertical-align: middle;
 }
 
 /* ------ USER ICON -----*/
 .fa-user {
     position: absolute;
-    background-color: black;
+    font-size: 2.5vw;
     color: white;
-    right: -15%;
-    margin-top: -1%;
-    border: 2px solid black;
-    border-radius: 100%;
-    width: 2.5vw;
-    height: 2.5vw;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    vertical-align: middle;
+    right: 6%;
+    width: 3vw;
+    height: 3vw;
     transition: 0.2s color;
 }
+
 .fa-user:hover {
     cursor: pointer;
     color: #e6e6e6;
@@ -74,20 +76,26 @@ a:hover {
     display: none;
     color: black;
     font-size: 1.25vw;
+    background: #f8f8f8;
+    border-radius: 10%;
+    overflow: hidden;
 }
+
 li {
     list-style-type: none;
     padding: 1vw 1.5vw;
-    border: 1px solid black;
 }
+
 li:hover {
     background-color: #e6e6e6;
 }
+
 .signOut {
     font: bold;
     color: red;
 }
-.fa:hover .dropdown {
+
+.fa-user:hover .dropdown {
     display: block;
 }
 
@@ -97,13 +105,41 @@ li:hover {
     top: 15%;
     left: 3%;
 }
+
 #header {
     font-size: 6vw;
     position: absolute;
     top: 2vw;
     white-space: nowrap;
 }
+
 #header-subtext {
     font-size: 2.5vw;
     color: rgba(0, 0, 0, 0.75);
+}
+
+/* ---------- IMAGE ----------- */
+.image {
+    position: absolute;
+    z-index: -1;
+    top: -5%;
+    right: -5%;
+    width: 60%;
+    height: 50%;
+    border: 20px solid blue;
+    border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%);
+    border-image-slice: 1;
+    transform: rotate(-38deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.mainImage {
+    position: absolute;
+    width: 175%;
+    height: auto;
+    transform: rotate(38deg);
+    overflow: hidden;
 }
